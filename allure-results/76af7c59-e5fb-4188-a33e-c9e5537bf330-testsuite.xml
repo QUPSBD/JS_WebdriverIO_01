@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1646198893719' stop='1646198928180'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1646198893727' status='broken' stop='1646198905428'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.109'/>
+            </parameters>
+            <steps>
+                <step start='1646198893730' status='passed' stop='1646198900103'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='27556746-3e21-459f-9ad8-ef6385067410-attachment.json' type='application/json' size='43'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646198900104' status='passed' stop='1646198900245'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='71d9b17c-20e0-45b6-9e52-48aa06db9919-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646198905258' status='passed' stop='1646198905427'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='f2c8c71d-6f87-4942-a31e-ba628a3388a1-attachment.png' type='image/png' size='80718'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>LoginPage.login is not a function</message>
+                <stack-trace>TypeError: LoginPage.login is not a function
+                    at Context.&lt;anonymous> (/Users/pc/Desktop/WDIO/test/specs/LoginSuite/loginPageTest.js:9:25)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1646198905429' status='passed' stop='1646198928180'>
+            <name>should login with Facebook</name>
+            <title>should login with Facebook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.109'/>
+            </parameters>
+            <steps>
+                <step start='1646198906432' status='passed' stop='1646198906447'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1ec09e04-6ab0-4f7b-ba3b-fe7da20c6f96-attachment.json' type='application/json' size='92'/>
+                        <attachment title='Response' source='8d5b00ee-35a4-4e7e-8c7b-5c45834658ce-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646198906453' status='passed' stop='1646198919857'>
+                    <name>POST /session/:sessionId/element/c27f5b8e-356c-4314-a84b-0c7a4e755608/click</name>
+                    <title>POST /session/:sessionId/element/c27f5b8e-356c-4314-a84b-0c7a4e755608/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1646198922859' status='passed' stop='1646198922876'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='46e27f9c-e29c-408d-bb48-5d082dc1fc7e-attachment.json' type='application/json' size='61'/>
+                        <attachment title='Response' source='c8200438-7e80-46c0-97aa-09a0a364f027-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646198922879' status='passed' stop='1646198923178'>
+                    <name>POST /session/:sessionId/element/ee2b9171-412d-4de1-a314-9f5f9a7acab2/click</name>
+                    <title>POST /session/:sessionId/element/ee2b9171-412d-4de1-a314-9f5f9a7acab2/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1646283022691' stop='1646283622697'>
+    <name>Sighn Up Test</name>
+    <title>Sighn Up Test</title>
+    <test-cases>
+        <test-case start='1646283022691' status='broken' stop='1646283622696'>
+            <name>Sighn Up</name>
+            <title>Sighn Up</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.109'/>
+            </parameters>
+            <steps>
+                <step start='1646283022695' status='passed' stop='1646283027233'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='419ff294-100f-493a-b18a-58e01754db37-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646283027233' status='passed' stop='1646283027385'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='f9844882-ec43-42d3-bb64-da46b7440911-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646283028389' status='passed' stop='1646283028628'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='58b16419-61eb-4800-a386-b47b36076c9a-attachment.json' type='application/json' size='92'/>
+                        <attachment title='Response' source='6bfd2c73-2872-479b-a297-bed20c604411-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646283028633' status='passed' stop='1646283028734'>
+                    <name>POST /session/:sessionId/element/71897eca-f779-4d34-8302-9149a82d322b/click</name>
+                    <title>POST /session/:sessionId/element/71897eca-f779-4d34-8302-9149a82d322b/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 600000ms exceeded. The execution in the test "Sighn Up Test Sighn Up" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/pc/Desktop/WDIO/test/specs/signUp/sighnUp.js)</message>
+                <stack-trace>Error: Timeout of 600000ms exceeded. The execution in the test "Sighn Up Test Sighn Up" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (/Users/pc/Desktop/WDIO/test/specs/signUp/sighnUp.js)
+                    at createTimeoutError (/Users/pc/Desktop/WDIO/node_modules/mocha/lib/errors.js:498:15)
+                    at Test.Runnable._timeoutError (/Users/pc/Desktop/WDIO/node_modules/mocha/lib/runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (/Users/pc/Desktop/WDIO/node_modules/mocha/lib/runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:557:17)
+                    at processTimers (node:internal/timers:500:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

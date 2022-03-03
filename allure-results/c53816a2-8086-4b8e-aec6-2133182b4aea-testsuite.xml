@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1646274995086' stop='1646274999945'>
+    <name>Employer login Test</name>
+    <title>Employer login Test</title>
+    <test-cases>
+        <test-case start='1646274995087' status='broken' stop='1646274999914'>
+            <name>Employer Login</name>
+            <title>Employer Login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.109'/>
+            </parameters>
+            <steps>
+                <step start='1646274995092' status='passed' stop='1646274999716'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7c98108c-8e12-4220-af9d-1df04525d0f3-attachment.json' type='application/json' size='43'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646274999717' status='broken' stop='1646274999914'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1646274999720' status='passed' stop='1646274999913'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='d387a4bb-afd0-4caa-9f4f-984243698927-attachment.json' type='application/json' size='119'/>
+                                <attachment title='Screenshot' source='c3aec47a-9ea2-4cab-9f56-e81d19d5a99e-attachment.png' type='image/png' size='75517'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='b5916992-f951-4020-9fba-3cd818c207d7-attachment.json' type='application/json' size='2001'/>
+            </attachments>
+            <failure>
+                <message>loginPage.employerSighnIn is not a function</message>
+                <stack-trace>TypeError: loginPage.employerSighnIn is not a function
+                    at Context.&lt;anonymous> (/Users/pc/Desktop/WDIO/test/specs/LoginSuite/employerLogin.js:7:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

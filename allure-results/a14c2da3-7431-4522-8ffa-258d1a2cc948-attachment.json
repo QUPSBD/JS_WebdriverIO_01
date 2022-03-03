@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@id=\"wb\"]/div[1]/div[2]/div/fieldset/div[3]/label"
+}

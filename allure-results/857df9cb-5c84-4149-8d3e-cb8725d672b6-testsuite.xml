@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1646289161006' stop='1646289204342'>
+    <name>Sighn Up Test</name>
+    <title>Sighn Up Test</title>
+    <test-cases>
+        <test-case start='1646289161007' status='passed' stop='1646289204341'>
+            <name>Sighn Up</name>
+            <title>Sighn Up</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-98.0.4758.109'/>
+            </parameters>
+            <steps>
+                <step start='1646289161011' status='passed' stop='1646289172039'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7e54543c-ea85-4f79-b9a0-c6e3704c0b58-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646289172039' status='passed' stop='1646289172189'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='719c87ea-750a-467f-be51-a3196ba47131-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646289173193' status='passed' stop='1646289173212'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0bad02e3-fe40-4e88-9072-4399fbc592f4-attachment.json' type='application/json' size='92'/>
+                        <attachment title='Response' source='246bf7f5-f78a-47b5-8411-635a146fce57-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1646289173218' status='passed' stop='1646289173336'>
+                    <name>POST /session/:sessionId/element/bc5dafa2-4f5a-40ad-b3cd-e704b253afff/click</name>
+                    <title>POST /session/:sessionId/element/bc5dafa2-4f5a-40ad-b3cd-e704b253afff/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

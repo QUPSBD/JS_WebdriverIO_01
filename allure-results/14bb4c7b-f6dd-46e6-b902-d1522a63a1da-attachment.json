@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@id=\"userDetailsDropdown\"]/span[1]"
+}
