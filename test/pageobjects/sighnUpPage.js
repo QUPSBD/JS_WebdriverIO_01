@@ -50,16 +50,16 @@ class SighnUpPage extends Page {
     async createAccount(){
         await this.createAccountLocator.click();
         await browser.pause(30000)
-        // await this.clickCreatAccountButton.click();
-        // await browser.pause(3000)
-        // await this.enterUserName.setValue("Raihan");
-        // await browser.pause(3000)
-        // await this.selectGender.click();
-        // await browser.pause(3000)
-        // await this.clickSkillType.click();
-        // await browser.pause(3000)
-        // await this.selectSkillType.click();
-        // await browser.pause(3000)
+        await this.clickCreatAccountButton.click();
+        await browser.pause(3000)
+        await this.enterUserName.setValue("Raihan");
+        await browser.pause(3000)
+        await this.selectGender.click();
+        await browser.pause(3000)
+        await this.clickSkillType.click();
+        await browser.pause(3000)
+        await this.selectSkillType.click();
+        await browser.pause(3000)
     }
 }
 module.exports = new SighnUpPage();
