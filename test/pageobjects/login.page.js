@@ -64,10 +64,8 @@ class LoginPage extends Page {
     get clickSubmitEmployerButton(){
         return $('/html/body/div[6]/div/div/div[2]/div/form/div[3]/input');
     }
-    //create account
-    get createAccountLocator(){
-        return $('//*[@id="lin_header_mid02"]/div[1]/div/nav/ul/li[7]/a');
-    }
+     
+    
 
 
      
@@ -116,9 +114,7 @@ class LoginPage extends Page {
        
    
     }
-    async createAccount(){
-        await this.createAccountLocator.click();
-    }
+   
 
     
     open() {

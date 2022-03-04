@@ -3,11 +3,15 @@ const Page = require('./page');
  
 class SighnUpPage extends Page {
 
-    get createAccountLocator(){
-        return $('//*[@id="lin_header_mid02"]/div[1]/div/nav/ul/li[7]/a');
+    get clickSignIn(){
+         
+        return $('//*[@id="bs-example-navbar-collapse-1"]/ul/li[3]/a');
     }
     get clickCreatAccountButton(){
-        return $('//*[@id="wcj"]/div');
+        return $('//*[@id="bs-example-navbar-collapse-1"]/ul/li[3]/ul/li/div[1]/div[2]/div[3]/a[2]');
+    }
+    get clickgeneralcreateAccountButton(){
+        return $('//*[@id="wcj"]/div/div/div[3]/div');
     }
     get enterUserName(){
         return $("//*[@id='txtFirstName']");
@@ -30,6 +34,9 @@ class SighnUpPage extends Page {
     get clickEmailButton(){
         return $('//*[@id="userInfo"]/div[1]/div/fieldset/div[2]/label/span[1]');
     }
+    get clickPhoneButton(){
+        return $('//*[@id="userInfo"]/div[1]/div/fieldset/div[3]/label/span[1]/span');
+    }
     get enterPassword(){
         return $('//*[@id="txtPassword"]');
     }
@@ -48,18 +55,36 @@ class SighnUpPage extends Page {
 
 
     async createAccount(){
-        await this.createAccountLocator.click();
-        await browser.pause(30000)
+        await browser.pause(5000);
+        await this.clickSignIn.click();
+        await browser.pause(5000);
         await this.clickCreatAccountButton.click();
-        await browser.pause(3000)
+        await browser.pause(3000);
+        await this.clickgeneralcreateAccountButton.click();
+        await browser.pause(3000);
         await this.enterUserName.setValue("Raihan");
-        await browser.pause(3000)
+        await browser.pause(3000);
         await this.selectGender.click();
-        await browser.pause(3000)
+        await browser.pause(1000);
         await this.clickSkillType.click();
-        await browser.pause(3000)
+        await browser.pause(1000);
         await this.selectSkillType.click();
-        await browser.pause(3000)
+        await browser.pause(1000);
+        await this.enterEmail.setValue('rm.qups@gmail.com');
+        await browser.pause(1000);
+        await this.enterPhonNumber.setValue("01784054592");
+        await browser.pause(10000);
+        await this.clickPhoneButton.click();
+        await browser.pause(1000)
+        await this.enterPassword.setValue("rm123456789");
+        await this.enterRePassword.setValue("rm123456789");
+        await browser.pause(1000);
+        await this.clickSubmitButton.click()
+        await browser.pause(5000);
+
+    }
+    open() {
+        return super.open('');
     }
 }
 module.exports = new SighnUpPage();
