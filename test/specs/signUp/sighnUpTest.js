@@ -1,12 +1,12 @@
-const sighnup = require('../../pageobjects/sighnUpPage');
+ const functionPage = require('../../pageobjects/fuctionPage');
 
 
 describe('Sighn Up Test', () => {
     it('Sighn Up', async () => {
-        await sighnup.open();
+        await functionPage.open();
         await browser.maximizeWindow()
         await browser.pause(1000)
-        await sighnup.createAccount();
+        await functionPage.createAccount();
         await browser.pause(10000);
     });
 });

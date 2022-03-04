@@ -1,12 +1,11 @@
-const live = require('../../pageobjects/livePage');
-
+ const functionPage = require('../../pageobjects/fuctionPage');
 
 describe('Live', () => {
     it('Companies Test', async () => {
-        await live.open();
+        await functionPage.open();
         await browser.maximizeWindow();
         await browser.pause(10000);
-        await live.clickcompanieslocator();
+        await functionPage.clickcompanieslocator();
          
     });
 });

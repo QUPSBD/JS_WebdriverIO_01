@@ -1,12 +1,12 @@
-const live = require('../../pageobjects/livePage');
+ const functionPage = require('../../pageobjects/fuctionPage');
 
 
 describe('Live', () => {
     it('Vacensies Test', async () => {
-        await live.open();
+        await functionPage.open();
         await browser.maximizeWindow();
         await browser.pause(10000);
-        await live.clickvacensieslocator();
+        await functionPage.clickvacensieslocator();
          
     });
 });
