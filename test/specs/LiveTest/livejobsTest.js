@@ -1,12 +1,11 @@
-const live = require('../../pageobjects/livePage');
-
+ const functionPage = require('../../pageobjects/fuctionPage');
 
 describe('Live', () => {
     it('Live Job', async () => {
-        await live.open();
+        await functionPage.open();
         await browser.maximizeWindow();
         await browser.pause(10000);
-        await live.clicklivejoblocator();
+        await functionPage.clicklivejoblocator();
          
     });
 });

@@ -1,12 +1,12 @@
-const bar = require('../../pageobjects/MainNavBarPage');
+ const functionPage = require('../../pageobjects/fuctionPage');
 
 
 describe('Main Nav Bar Test', () => {
     it('main nav Bar', async () => {
-        await bar.open();
+        await functionPage.open();
         await browser.maximizeWindow();
         await browser.pause(10000);
-        await bar.mainnavbar();
+        await functionPage.mainnavbar();
          
     });
 });

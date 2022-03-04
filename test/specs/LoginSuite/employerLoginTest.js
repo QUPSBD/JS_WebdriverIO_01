@@ -1,10 +1,10 @@
-const loginPage = require('../../pageobjects/login.page')
+ const functionPage = require('../../pageobjects/fuctionPage');
  
 
 describe('Employer login Test', () => {
     it('Employer Login', async () => {
-        await loginPage.open();
+        await functionPage.open();
         await browser.maximizeWindow();
-        await loginPage.loginEmployerSighnIn("rm.qups@gmail.com", "rm123456789");
+        await functionPage.loginEmployerSighnIn("rm.qups@gmail.com", "rm123456789");
     });
 })

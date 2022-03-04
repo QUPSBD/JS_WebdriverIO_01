@@ -21,7 +21,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/signUp/**/*.js'
+        './test/specs/DivisionalJob/**/*.js'
     ],
     // suite: [
     //     './test/specs/LoginSuite/**/*.js'
